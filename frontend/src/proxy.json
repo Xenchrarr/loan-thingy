@@ -1,0 +1,6 @@
+{
+    "/api/loan/getloan  ": {
+        "target": "http://localhost:4001/api/",
+        "secure": false
+    }
+}

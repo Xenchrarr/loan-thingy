@@ -1,0 +1,84 @@
+.standard-dialog {
+}
+
+.blue-button {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #e7e7e7;
+    margin-right: -6px;
+    background-color: #407ec9;
+    margin-left: auto;
+    height: 36px;
+}
+
+.save-button {
+
+
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    //border: 1px solid #e7e7e7;
+    margin-right: -6px;
+    background-color: #407ec9;
+    margin-left: auto;
+    height: 36px;
+}
+
+.close-button {
+    //border: 1px solid #a3a3a3;
+    margin-right: 6px;
+    background-color: #ffffff;
+    margin-left: auto;
+    height: 36px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #a3a3a3;
+}
+
+.blue-button-container {
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.dialog-header {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    color: var(--black-87);
+}
+
+.dialog-content {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,57 @@
+<mat-card>
+  <mat-card-header>
+    <div class="_border"></div>
+    <div class="header-text">
+      <div class="inv-header">Huslaan</div>
+      <div class="inv-header2"></div>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="_grey-background"></div>
+
+
+    <div class="content-container">
+
+      <mat-slider min="10" max="30" step="1" [(ngModel)]="numberOfYears" (ngModelChange)="downloadLoan()"></mat-slider>
+
+
+      <mat-form-field class="custom-input-settings">
+        <div class="flex-container">
+          <input  class="custom-input" matInput [placeholder]="'Antall aar nedbetaling'" [(ngModel)]="numberOfYears" (ngModelChange)="downloadLoan()" >
+        </div>
+
+      </mat-form-field>
+
+      <mat-form-field class="custom-input-settings">
+        <div class="flex-container">
+          <input  class="custom-input" matInput [placeholder]="'Laanebeloep '" [(ngModel)]="amount" (ngModelChange)="downloadLoan()" >
+        </div>
+
+      </mat-form-field>
+
+
+      <div *ngIf="loan != null">
+        <table>
+            <tr>
+                <th>Betaling nr</th>
+                <th>Innbetalt</th>
+                <th>Renter</th>
+                <th>Nedbetaling</th>
+                <th>Gjennstaaende</th>
+            </tr>
+            <tr *ngFor="let item of loan.payments">
+                <td>{{item.monthNumber}}</td>
+                <td>{{getPrettyNumber(item.totalAmount)}}</td>
+                <td>{{getPrettyNumber(item.interestAmount)}}</td>
+                <td>{{getPrettyNumber(item.payAmount)}}</td>
+                <td>{{getPrettyNumber(item.remainingAfter)}}</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+  </mat-card-content>
+</mat-card>
+
+
+
